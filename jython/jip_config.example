@@ -1,0 +1,12 @@
+[repos:ilitools]
+uri=https://jars.interlis.ch
+type=remote
+
+[repos:central]
+uri=https://repo1.maven.org/maven2/
+type=remote
+
+[repos:local]
+uri=~/.m2/repository/
+type=local
+
