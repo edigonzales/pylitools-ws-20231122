@@ -25,12 +25,33 @@ VM stoppen:
 multipass stop pylitools
 ```
 
+VM anzeigen:
+```
+multipass list
+```
+
 VM definitiv löschen:
 ```
 multipass delete --purge pylitools
 ```
 
+### Java installieren
 
+Auf Ubuntu und Linux mit [sdkman](https://sdkman.io/):
 
-- Multipass... oder auch nicht -> GraalVM geht ja ohne. Trotzdem als Backup-Lösung für Windows.
-- Port forwarding muss gehen.
+```
+sudo apt-get install zip unzip
+curl -s "https://get.sdkman.io" | bash
+source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
+```
+
+Java installieren:
+
+```
+sdk l java
+```
+
+```
+sdk i java 11.0.20.1-tem
+java -version
+```
