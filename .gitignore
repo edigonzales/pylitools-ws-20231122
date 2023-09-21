@@ -1,2 +1,6 @@
 .DS_Store
 .pyc
+jython/.jenv/
+jython/.jython_cache/
+jython/validation.log
+jython/validation.log.xtf

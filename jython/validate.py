@@ -5,6 +5,6 @@ settings = Settings()
 settings.setValue(Validator.SETTING_LOGFILE, "validation.log")
 settings.setValue(Validator.SETTING_XTFLOG, "validation.log.xtf")
 
-valid = Validator.runValidation(["ch.so.agi.av.inventar_kantonsgrenzzeichen.xtf"], settings);
+valid = Validator.runValidation(["ch.so.agi.av.inventar_kantonsgrenzzeichen.xtf"], settings)
 
 print valid
