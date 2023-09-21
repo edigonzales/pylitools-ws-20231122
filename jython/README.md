@@ -167,9 +167,13 @@ export CLASSPATH
 $JYTHON_CMD -Dpython.path=$PYTHON_PATH "$@"
 ```
 
-Das Skript wurde mit `jip` installiert, muss aber noch ausführbar gemacht werden.
+Mit `jip` wurde dieses Skript installiert (_jython_all_) installiert, muss aber noch ausführbar gemacht werden.
 ```
 chmod +rx .jenv/bin/jython-all
+```
+
+```
+jython-all validate.py
 ```
 
 Und es funktioniert.

@@ -4,3 +4,6 @@ jython/.jenv/
 jython/.jython_cache/
 jython/validation.log
 jython/validation.log.xtf
+
+native/.venv/
+native/.jython_cache/
