@@ -1,5 +1,20 @@
 # pylitools-ws-20231122
 
+## TODO: Präsentation
+- Vorstellen der Variante mit paar Erläuterungen
+
+
+
+- Schlussfolie Vor- und Nachteile:
+  * native:  
+    - man muss eine API schreiben (zusätzlich zur shared library).
+    - Man kann "normale" Python-Distribution verwenden. -> Grösstmögliche Kompatibilität. 
+    - shared lib ist OS-abhängig
+    - start up Zeit ist besser
+    - Validierungs-Performance jedoch schlechter
+
+
+
 ## Vorbereitung
 
 ### Multipass

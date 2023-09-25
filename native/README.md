@@ -64,3 +64,34 @@ Und aktivieren:
 ```
 source .venv/bin/activate
 ```
+
+## ilivalidator Python-Modul installieren
+```
+pip install ilivalidator==0.0.3
+```
+
+Zum Modul gehört die shared library, die ebenfalls heruntergeladen wird.
+
+## Ilivalidator in Python-Skript verwenden
+```
+python3 validate.py
+```
+
+## Minimaler Validator-Webservice mit Flask
+
+Flask installieren:
+```
+pip install Flask
+```
+
+Webservice starten:
+```
+python3 webservice.py
+```
+
+Falls in einer VM gearbeitet wird, muss diese ggf so konfiguriert werden, dass man via Browser auf sie zugreifen kann. Die IP mit Multipass kann man wie folgt herausfinden:
+```
+multipass list
+```
+
+Anschliessend z.B. `http://192.168.64.2:5001/`. Falls alles lokal ausgeführt wird, reicht `http://0.0.0.0:5001/`.
