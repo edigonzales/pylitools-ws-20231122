@@ -55,8 +55,41 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'java'
 ```
 
+Es muss im JVM-Modus gestartet werden:
+
 ```
 graalpy hello_java.py
 ```
 
-Es muss wieder eine JVM gestartet werden. Entsprechend ist die Startup-Zeit nicht mehr super toll.
+Weil wieder eine JVM (und ein [Context](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Context.html)?) gestartet wird, ist die Startup-Zeit schlechter. 
+
+## Ilivalidator in Python-Skript verwenden
+
+Wie in Jython muss man dem Python-Skript die Java-Libraries heruntergeladen werden. Es gibt keine "built-in"-Möglichkeit. Man kann dazu ein Build-Tool (aus der Java-Welt) verwenden:
+
+```
+./gradlew getDeps
+```
+
+Die Java-Klassen müssen im Python-Code dem Klassenpfad hinzugefügt werden:
+
+```
+files = os.listdir(os.path.join(".venv", "javalib"))
+for file in files:
+    if file.endswith("jar"):
+        java.add_to_classpath(os.path.join(".venv", "javalib", file))
+```
+
+Anschliessend kann das Skript ausgeführt werden:
+
+```
+graalpy validate.py
+```
+
+## Minimaler Validator-Webservice mit Flask
+
+Flask installieren:
+```
+pip install Flask
+```
+

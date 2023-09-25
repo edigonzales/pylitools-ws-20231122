@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url "https://jars.interlis.ch"
+    }
+}
+
+dependencies {
+    implementation "ch.interlis:ilivalidator:1.13.3"
+}
+
+
+task getDeps(type: Copy) {
+  from sourceSets.main.runtimeClasspath
+  into '.venv/javalib'
+}
