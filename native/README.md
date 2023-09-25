@@ -34,7 +34,6 @@ Kompilieren:
 ./gradlew clean test nativeCompile
 ```
 
-
 ## Python installieren
 
 Ubuntu:
@@ -50,8 +49,7 @@ Im Multipass-Image muss nur `venv` installiert werden:
 sudo apt install python3.10-venv
 ```
 
-
-Oder man kann auch die GraalPy-Implementierung verwenden. **TODO**
+Oder man kann auch die GraalPy-Implementierung verwenden. 
 
 ## Venv erstellen
 Falls vorgängig das Jython-Beispiel durchgespielt wurde, muss Jython wieder aus dem PATH entfernt werden (z.B. _.bashrc_).

@@ -7,3 +7,5 @@ jython/validation.log.xtf
 
 native/.venv/
 native/.jython_cache/
+
+graalvm/.venv/
