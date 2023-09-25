@@ -25,7 +25,7 @@ python --version
 ## Venv erstellen
 
 ```
-python3 -m venv .venv
+graalpy -m venv .venv
 ```
 
 Und aktivieren:
