@@ -25,8 +25,11 @@ python --version
 ## Venv erstellen
 
 ```
-graalpy -m venv .venv
+graalpy --python.Executable=/home/ubuntu/apps/graalpy/bin/graalpy  -m venv .venv
 ```
+
+`--python.Exectuable=...` ist notwendig wegen Bug (nur Linux ARM64).
+
 
 Und aktivieren:
 ```

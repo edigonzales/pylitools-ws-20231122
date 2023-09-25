@@ -30,6 +30,12 @@ Verzeichnis mounten:
 multipass mount $PWD pylitools:/home/ubuntu/pylitools
 ```
 
+Robuster (symlinks etc.) ist das Clonen des Repos innerhalb der VM: 
+
+```
+git clone https://github.com/edigonzales/pylitools-ws-20231122.git
+```
+
 In VM einloggen:
 ```
 multipass shell pylitools
