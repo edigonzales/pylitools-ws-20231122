@@ -1,6 +1,8 @@
 # pylitools-ws-20231122
 
 ## TODO: Präsentation
+
+- docker run --rm -it -v $(pwd):/workdir danteev/texlive latexmk -pdfxe foo.tex
 - Vorstellen der Variante mit paar Erläuterungen
 
 
