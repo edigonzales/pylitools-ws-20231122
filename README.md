@@ -76,3 +76,5 @@ sdk l java
 sdk i java 11.0.20.1-tem
 java -version
 ```
+
+Wird für Jython benötigt und für einen Schritt mit GraalPy.

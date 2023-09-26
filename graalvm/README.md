@@ -8,10 +8,12 @@ Siehe https://github.com/oracle/graalpython/releases
 
 ```
 wget https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpy-community-jvm-23.1.0-linux-amd64.tar.gz
+wget https://github.com/oracle/graalpython/releases/download/graal-23.1.0/graalpy-community-jvm-23.1.0-linux-aarch64.tar.gz
 ```
 
 ```
 tar -xzf graalpy-community-jvm-23.1.0-linux-amd64.tar.gz -C /home/ubuntu/apps/
+tar -xzf graalpy-community-jvm-23.1.0-linux-aarch64.tar.gz -C /home/ubuntu/apps/
 ```
 Es muss die "-jvm"-Version sein. Die non-community-Version dünkt mich broken.
 
@@ -24,11 +26,19 @@ python --version
 
 ## Venv erstellen
 
+In das _graalvm_-Verzeichnis wechseln.
+
 ```
-graalpy --python.Executable=/home/ubuntu/apps/graalpy/bin/graalpy  -m venv .venv
+cd pylitools-ws-20231122
+cd graalvm
 ```
 
-`--python.Exectuable=...` ist notwendig wegen Bug (nur Linux ARM64).
+```
+graalpy --python.Executable=/home/ubuntu/apps/graalpy-community-23.1.0-linux-amd64/bin/graalpy -m venv .venv
+graalpy --python.Executable=/home/ubuntu/apps/graalpy-community-23.1.0-linux-aarch64/bin/graalpy -m venv .venv
+```
+
+`--python.Exectuable=...` ist notwendig wegen Bug (nur auf Linux ARM64).
 
 
 Und aktivieren:
@@ -39,32 +49,16 @@ source .venv/bin/activate
 ## Einfaches Python-Skript ausführen
 
 ```
-python3 hello.py
+graalpy hello.py
 ```
 
-Startup-Zeit sehr gut.
+Weil wieder eine JVM (und ein [Context](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Context.html)?) gestartet wird, ist die Startup-Zeit schlechter. 
 
 ## Java-Klassen in Python-Skript verwenden
 
 ```
 python3 hello_java.py
 ```
-
-Upsi:
-```
-Traceback (most recent call last):
-  File "/home/ubuntu/pylitools/graalvm/hello_java.py", line 1, in <module>
-    import java
-ModuleNotFoundError: No module named 'java'
-```
-
-Es muss im JVM-Modus gestartet werden:
-
-```
-graalpy hello_java.py
-```
-
-Weil wieder eine JVM (und ein [Context](https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Context.html)?) gestartet wird, ist die Startup-Zeit schlechter. 
 
 ## Ilivalidator in Python-Skript verwenden
 
