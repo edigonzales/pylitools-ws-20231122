@@ -63,15 +63,3 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001)
-
-
-
-
-
-settings = Settings()
-settings.setValue(Validator.SETTING_LOGFILE, "validation.log")
-settings.setValue(Validator.SETTING_XTFLOG, "validation.log.xtf")
-
-valid = Validator.runValidation(["ch.so.agi.av.inventar_kantonsgrenzzeichen.xtf"], settings)
-
-print(valid)

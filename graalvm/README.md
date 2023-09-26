@@ -90,3 +90,14 @@ Flask installieren:
 pip install Flask
 ```
 
+Webservice starten:
+```
+graalpy webservice.py
+```
+
+Falls in einer VM gearbeitet wird, muss diese ggf so konfiguriert werden, dass man via Browser auf sie zugreifen kann. Die IP mit Multipass kann man wie folgt herausfinden:
+```
+multipass list
+```
+
+Anschliessend z.B. `http://192.168.64.2:5001/`. Falls alles lokal ausgeführt wird, reicht `http://0.0.0.0:5001/`.
