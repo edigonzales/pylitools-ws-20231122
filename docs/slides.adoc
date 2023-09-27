@@ -69,7 +69,7 @@
 
 === Con
 
-* Needs extra code (shared lib)
+* Needs extra code (shared lib and Python module)
 * Performance of shared lib (but gets better with every release)
 * OS dependent
 
