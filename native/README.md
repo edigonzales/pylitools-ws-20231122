@@ -65,7 +65,7 @@ source .venv/bin/activate
 
 ## ilivalidator Python-Modul installieren
 ```
-pip install ilivalidator==0.0.3
+pip install ilivalidator==0.0.4
 ```
 
 Zum Modul gehört die shared library, die ebenfalls heruntergeladen wird.
