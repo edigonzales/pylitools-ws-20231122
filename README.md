@@ -2,7 +2,10 @@
 
 ## TODO: Präsentation
 
-- docker run -it -u $(id -u):$(id -g) -v $PWD:/documents/ asciidoctor/docker-asciidoctor
+- docker run -it -u $(id -u):$(id -g) -v $(pwd):/documents/ asciidoctor/docker-asciidoctor
+- https://github.com/asciidoctor/docker-asciidoctor/blob/main/README.adoc
+- asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js slides.adoc
+
 - docker run --rm -it -v $(pwd):/workdir danteev/texlive latexmk -pdfxe foo.tex
 - Vorstellen der Variante mit paar Erläuterungen
 

@@ -1,0 +1,45 @@
+= Python &#9829; INTERLIS
+:revealjs_theme: simple
+:source-highlighter: highlight.js
+
+== Three flavours
+
+* Jython
+* GraalPy
+* Shared Libs with Python Bindings
+
+== Requirements 
+
+* Linux or macOS
+* Windows: WSL2 or something similar (e.g. Multipass)
+* Clone repo: `https://github.com/edigonzales/pylitools-ws-20231122.git`
+
+== Python loves INTERLIS, but...
+
+* it still has something to do with Java ;)
+* especially the ecosystem (e.g. tooling) can be confusing (for Python programmers)
+* it focuses on writing Python code and integrating existing INTERLIS tools
+
+== Jython
+
+* Implementation of Python in Java
+* Runs on the JVM
+* Has access to Java classes / libraries
+
+=== Pro
+
+* Easy to access Java classes
+* Some tooling exists (e.g. Jip)
+
+=== Con
+
+* Python 2.7
+* Everything seems to be outdated
+* Start up time
+
+== GraalPy
+
+== Shared Libs with Python Bindings
+
+
+== Conclusion
