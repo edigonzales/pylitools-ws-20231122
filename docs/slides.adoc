@@ -34,16 +34,33 @@
 === Con
 
 * Python 2.7
+* Cannot run Python modules with C extensions
 * Everything seems to be outdated
 * Start up time
 
 == GraalPy
 
+* Implementation of Python on top of GraalVM
+* Primary goal is to support PyTorch and SciPy
 
+=== Pro
 
+* Python 3.10
+* Easy to access Java classes
+* Can run Python modules with C extensions
+* Interoperability with other Truffle languages (e.g. JS, Ruby, R, Java)
 
+=== Con 
+
+* Tooling 
+* Start up time
+* Experimental (still?)
 
 == Shared Libs with Python Bindings
+
+* Build a shared library from Java class with GraalVM 
+* Create Python Bindings
+* `pip install ilivalidator`
 
 === Pro
 
@@ -52,8 +69,12 @@
 
 === Con
 
+* Needs extra code (shared lib)
 * Performance of shared lib (but gets better with every release)
 * OS dependent
 
-
 == Conclusion
+
+* ...
+* ...
+* ...
