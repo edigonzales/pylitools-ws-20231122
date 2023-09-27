@@ -58,7 +58,7 @@
 
 == Shared Libs with Python Bindings
 
-* Build a shared library from Java class with GraalVM 
+* Build a shared library ("dll") from Java class with GraalVM 
 * Create Python Bindings
 * `pip install ilivalidator`
 
