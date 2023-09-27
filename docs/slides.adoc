@@ -39,7 +39,15 @@
 
 == GraalPy
 
+
+
+
+
 == Shared Libs with Python Bindings
+
+=== Con
+
+* Performance siehe Blog
 
 
 == Conclusion
