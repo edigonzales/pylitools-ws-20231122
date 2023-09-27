@@ -2,10 +2,11 @@
 
 ## TODO: Präsentation
 
+- docker run -it -u $(id -u):$(id -g) -v $PWD:/documents/ asciidoctor/docker-asciidoctor
 - docker run --rm -it -v $(pwd):/workdir danteev/texlive latexmk -pdfxe foo.tex
 - Vorstellen der Variante mit paar Erläuterungen
 
-
+- asciidoctorj -a revnumber=0.0.99 -b pdf index.adoc
 
 - Schlussfolie Vor- und Nachteile:
   * native:  
