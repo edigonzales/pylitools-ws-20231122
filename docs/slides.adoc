@@ -45,9 +45,15 @@
 
 == Shared Libs with Python Bindings
 
+=== Pro
+
+* Standard Python distribution
+* Super fast start up time
+
 === Con
 
-* Performance siehe Blog
+* Performance of shared lib (but gets better with every release)
+* OS dependent
 
 
 == Conclusion
