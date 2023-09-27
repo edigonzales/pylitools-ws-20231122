@@ -20,11 +20,10 @@
     - Validierungs-Performance jedoch schlechter
 
 
-
 ## Vorbereitung
 
 ### Multipass
-Mit [Multipass](https://multipass.run/install) können einfach und schnell Linux-VM erstellt werden.
+Mit [Multipass](https://multipass.run/install) können einfach und schnell Linux-VM erstellt werden. Version 1.11.1 funkioniert gut, spätere haben bei mir Probleme verursachte (macOS).
 
 VM (Ubuntu 22.04) erstellen und starten:
 ```
