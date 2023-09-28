@@ -16,3 +16,5 @@ settings.setValue(Validator.SETTING_XTFLOG, "validation.log.xtf")
 valid = Validator.runValidation(["ch.so.agi.av.inventar_kantonsgrenzzeichen.xtf"], settings)
 
 print("The file is valid: {}".format(valid))
+
+
