@@ -1,24 +1,16 @@
 # pylitools-ws-20231122
 
-## TODO: Präsentation
+## Präsentation
 
-- docker run -it -u $(id -u):$(id -g) -v $(pwd):/documents/ asciidoctor/docker-asciidoctor
-- https://github.com/asciidoctor/docker-asciidoctor/blob/main/README.adoc
-- asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js slides.adoc
+```
+docker run -it -u $(id -u):$(id -g) -v $(pwd):/documents/ asciidoctor/docker-asciidoctor
+```
 
-- docker run --rm -it -v $(pwd):/workdir danteev/texlive latexmk -pdfxe foo.tex
-- Vorstellen der Variante mit paar Erläuterungen
+see: https://github.com/asciidoctor/docker-asciidoctor/blob/main/README.adoc
 
-- asciidoctorj -a revnumber=0.0.99 -b pdf index.adoc
-
-- Schlussfolie Vor- und Nachteile:
-  * native:  
-    - man muss eine API schreiben (zusätzlich zur shared library).
-    - Man kann "normale" Python-Distribution verwenden. -> Grösstmögliche Kompatibilität. 
-    - shared lib ist OS-abhängig
-    - start up Zeit ist besser
-    - Validierungs-Performance jedoch schlechter
-
+```
+asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js slides.adoc
+```
 
 ## Vorbereitung
 
