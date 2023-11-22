@@ -63,6 +63,8 @@ curl -s "https://get.sdkman.io" | bash
 source "/home/ubuntu/.sdkman/bin/sdkman-init.sh"
 ```
 
+(Resp. anderer Benutzername statt `ubuntu`).
+
 Java installieren:
 
 ```

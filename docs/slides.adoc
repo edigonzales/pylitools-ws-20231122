@@ -1,4 +1,4 @@
-= Python &#9829; INTERLIS
+= Python &# ; INTERLIS
 :revealjs_theme: simple
 :source-highlighter: highlight.js
 
